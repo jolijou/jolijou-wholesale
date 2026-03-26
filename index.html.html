@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jolijou Wholesale — Pre-Owned Luxury Handbags from Japan | B2B Wholesale</title>
+<meta name="description" content="Jolijou Wholesale — Japan's trusted B2B source for pre-owned luxury handbags, wallets & accessories. No minimums. Authenticated. Ships worldwide.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:    #111010;
+  --ivory:  #f8f4ee;
+  --sand:   #ede8df;
+  --gold:   #b89a6a;
+  --gold2:  #d4b98a;
+  --muted:  #7a7060;
+  --white:  #ffffff;
+  --border: rgba(184,154,106,0.22);
+  --border2:rgba(184,154,106,0.12);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  background: var(--ivory);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ─── STICKY NAV ─── */
+.topbar {
+  position: fixed; top:0; left:0; right:0; z-index:200;
+  background: rgba(248,244,238,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 40px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand span { color: var(--gold); }
+
+.nav-cta {
+  display: flex; gap: 10px; align-items: center;
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 10px 22px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; border: none;
+  transition: all 0.25s;
+}
+.btn-gold  { background: var(--gold); color: var(--white); }
+.btn-gold:hover  { background: var(--gold2); }
+.btn-outline { background: transparent; border: 1.5px solid var(--gold); color: var(--gold); }
+.btn-outline:hover { background: var(--gold); color: var(--white); }
+.btn-dark  { background: var(--ink); color: var(--white); }
+.btn-dark:hover  { background: #2a2a2a; }
+.btn-lg { padding: 15px 34px; font-size: 0.82rem; }
+.btn-wa { background: #25d366; color:#fff; }
+.btn-wa:hover { background: #1da851; }
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  background: var(--ink);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 64px;
+  overflow: hidden;
+}
+
+.hero-left {
+  padding: 80px 56px 80px 72px;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative; z-index: 1;
+}
+
+.hero-left::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 20% 60%, rgba(184,154,106,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+.tag::before {
+  content: '';
+  width: 24px; height: 1px; background: var(--gold);
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5vw, 5.2rem);
+  line-height: 1.06;
+  color: var(--ivory);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero h1 em { font-style: italic; color: var(--gold); }
+
+.hero-sub-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 1.8vw, 1.55rem);
+  font-style: italic;
+  color: rgba(248,244,238,0.55);
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 0.96rem;
+  line-height: 1.85;
+  color: rgba(248,244,238,0.6);
+  max-width: 440px;
+  margin-bottom: 40px;
+}
+
+.hero-btns {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.hero-badges {
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.hero-badge {
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.hero-badge strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--gold); line-height: 1;
+}
+.hero-badge span {
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(248,244,238,0.4); margin-top: 3px;
+}
+
+.hero-right {
+  position: relative;
+  background: linear-gradient(135deg, #1a1812 0%, #0d0c0a 100%);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+
+.hero-right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 40%, rgba(184,154,106,0.1) 0%, transparent 60%);
+}
+
+.hero-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 80px 40px 40px 20px;
+  position: relative; z-index: 1;
+}
+
+.img-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,154,106,0.18);
+  border-radius: 2px;
+  aspect-ratio: 3/4;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px;
+  color: rgba(184,154,106,0.4);
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-card:nth-child(1) { margin-top: 32px; }
+.img-card:nth-child(3) { margin-top: -24px; }
+
+.img-card-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(248,244,238,0.25);
+}
+
+/* floating trust pills */
+.trust-pill {
+  position: absolute;
+  background: rgba(184,154,106,0.9);
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+.trust-pill-1 { top: 90px; right: 44px; }
+.trust-pill-2 { bottom: 120px; left: 50px; }
+
+/* ─── TRUST BAR ─── */
+.trust-bar {
+  background: var(--sand);
+  border-top: 1px solid var(--border2);
+  border-bottom: 1px solid var(--border2);
+  padding: 20px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.trust-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.trust-item .ico { font-size: 1rem; }
+.trust-item strong { color: var(--ink); font-weight: 500; }
+
+/* ─── SECTION COMMON ─── */
+.section {
+  padding: 90px 72px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-full {
+  padding: 90px 72px;
+}
+
+.eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content:''; width:20px; height:1px; background:var(--gold); }
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.12;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+
+.section-body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 560px;
+}
+
+.rule {
+  width: 100%; height: 1px;
+  background: var(--border2);
+  margin: 0;
+}
+
+/* ─── WHO WE SERVE ─── */
+.serve-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+  margin-top: 52px;
+}
+
+.serve-card {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.serve-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.07); }
+
+.serve-card::before {
+  content: '';
+  position: absolute; top:0; left:0;
+  width: 3px; height: 0;
+  background: var(--gold);
+  transition: height 0.4s ease;
+}
+.serve-card:hover::before { height: 100%; }
+
+.serve-icon {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.serve-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.serve-body {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.serve-tags {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 18px;
+}
+.serve-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: rgba(184,154,106,0.1);
+  border: 1px solid var(--border);
+  color: var(--gold);
+}
+
+/* ─── STATS ─── */
+.stats-band {
+  background: var(--ink);
+  padding: 70px 72px;
+}
+
+.stats-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 0;
+}
+
+.stat-block {
+  padding: 20px 24px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  text-align: center;
+}
+.stat-block:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(248,244,238,0.4);
+  line-height: 1.5;
+}
+
+/* ─── CATEGORIES ─── */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-top: 52px;
+}
+
+.cat-card {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  padding: 36px 24px;
+  text-align: center;
+  transition: all 0.25s;
+  cursor: default;
+}
+.cat-card:hover {
+  background: var(--sand);
+  border-color: var(--border);
+}
+
+.cat-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+.cat-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.cat-desc {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+/* ─── HOW WE SOURCE ─── */
+.source-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.source-visual {
+  background: var(--ink);
+  border: 1px solid var(--border);
+  padding: 52px 44px;
+  position: relative;
+}
+
+.source-visual::before {
+  content: '"Checked in Japan"';
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+}
+
+.source-step {
+  display: flex; gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  align-items: flex-start;
+}
+.source-step:last-child { border-bottom: none; }
+
+.step-num {
+  width: 32px; height: 32px; flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(184,154,106,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--gold);
+}
+
+.step-content strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ivory);
+  margin-bottom: 4px;
+}
+
+.step-content p {
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(248,244,238,0.4);
+}
+
+.source-points {
+  list-style: none;
+  margin-top: 32px;
+}
+.source-points li {
+  display: flex; gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border2);
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.6;
+  align-items: flex-start;
+}
+.source-points li span {
+  color: var(--gold);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ─── WHY JOLIJOU ─── */
+.why-bg {
+  background: var(--sand);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+  margin-top: 52px;
+}
+
+.why-card {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  padding: 36px 30px;
+  transition: all 0.25s;
+}
+.why-card:hover {
+  border-color: var(--border);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+}
+
+.why-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  color: rgba(184,154,106,0.18);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.why-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.why-body {
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* ─── COMPANY TRUST ─── */
+.trust-layout {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+}
+.company-table tr {
+  border-bottom: 1px solid var(--border2);
+}
+.company-table td {
+  padding: 14px 0;
+  vertical-align: top;
+  line-height: 1.65;
+}
+.company-table td:first-child {
+  width: 160px;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding-right: 20px;
+}
+.company-table td:last-child {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.company-table td:last-child a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.trust-right {
+  display: flex; flex-direction: column; gap: 16px;
+  margin-top: 24px;
+}
+
+.trust-box {
+  border: 1px solid var(--border2);
+  background: var(--white);
+  padding: 28px 26px;
+}
+
+.trust-box-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.trust-box-body {
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.license-badge {
+  display: inline-block;
+  background: rgba(184,154,106,0.1);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-top: 10px;
+}
+
+/* ─── CONTACT / CTA ─── */
+.cta-section {
+  background: var(--ink);
+  padding: 90px 72px;
+}
+
+.cta-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.cta-left .section-title { color: var(--ivory); }
+.cta-left .section-body { color: rgba(248,244,238,0.5); max-width: 440px; margin-top: 16px; }
+
+.contact-methods {
+  display: flex; flex-direction: column; gap: 12px;
+  margin-top: 32px;
+}
+
+.contact-method {
+  display: flex; align-items: center; gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid rgba(184,154,106,0.18);
+  background: rgba(255,255,255,0.03);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.contact-method:hover {
+  border-color: var(--gold);
+  background: rgba(184,154,106,0.06);
+}
+
+.contact-method .cm-icon {
+  font-size: 1.3rem; flex-shrink:0;
+}
+.contact-method .cm-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2px;
+}
+.contact-method .cm-val {
+  font-size: 0.9rem;
+  color: var(--ivory);
+}
+
+/* Form */
+.contact-form {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(184,154,106,0.16);
+  padding: 36px 32px;
+}
+
+.form-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ivory);
+  margin-bottom: 4px;
+}
+
+.form-sub {
+  font-size: 0.78rem;
+  color: rgba(248,244,238,0.35);
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(248,244,238,0.35);
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(184,154,106,0.2);
+  color: var(--ivory);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(248,244,238,0.2);
+}
+.form-group select option { background: #1a1a1a; }
+.form-group textarea { min-height: 90px; resize: vertical; }
+
+.form-submit {
+  width: 100%;
+  margin-top: 6px;
+  padding: 15px;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+.form-submit:hover { background: var(--gold2); }
+
+/* ─── DISCLAIMER ─── */
+.disclaimer {
+  background: #0a0908;
+  padding: 36px 72px;
+  border-top: 1px solid rgba(184,154,106,0.1);
+}
+
+.disclaimer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.disclaimer p {
+  font-size: 0.72rem;
+  line-height: 1.85;
+  color: rgba(248,244,238,0.22);
+}
+
+.disclaimer strong {
+  color: rgba(248,244,238,0.4);
+  font-weight: 500;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--ink);
+  padding: 32px 72px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+}
+
+.footer-links {
+  display: flex; gap: 20px; list-style: none;
+}
+.footer-links a {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(248,244,238,0.25);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold); }
+
+.footer-copy {
+  font-size: 0.7rem;
+  color: rgba(248,244,238,0.18);
+}
+
+/* ─── FLOATING WA ─── */
+.wa-float {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  z-index: 300;
+  display: flex; align-items: center; gap: 10px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px 12px 16px;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  transition: all 0.25s;
+}
+.wa-float:hover {
+  background: #1da851;
+  box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+  transform: translateY(-2px);
+}
+.wa-float svg { width:22px; height:22px; fill:#fff; }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+.hero-left > * {
+  animation: fadeUp 0.7s ease both;
+}
+.hero-left > *:nth-child(1) { animation-delay:.1s }
+.hero-left > *:nth-child(2) { animation-delay:.2s }
+.hero-left > *:nth-child(3) { animation-delay:.3s }
+.hero-left > *:nth-child(4) { animation-delay:.4s }
+.hero-left > *:nth-child(5) { animation-delay:.5s }
+.hero-left > *:nth-child(6) { animation-delay:.6s }
+.hero-right { animation: fadeUp 0.8s ease .35s both; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 980px) {
+  .topbar { padding: 12px 20px; }
+  .hero { grid-template-columns: 1fr; padding-top: 64px; }
+  .hero-left { padding: 56px 24px 40px; }
+  .hero-right { display: none; }
+  .trust-bar { padding: 16px 24px; justify-content: center; }
+  .section { padding: 60px 24px; }
+  .section-full { padding: 60px 24px; }
+  .serve-grid, .why-grid { grid-template-columns: 1fr; gap: 2px; }
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .stats-inner { grid-template-columns: repeat(3,1fr); }
+  .source-layout, .trust-layout, .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+  .stats-band { padding: 50px 24px; }
+  .cta-section { padding: 60px 24px; }
+  .disclaimer { padding: 28px 24px; }
+  footer { flex-direction: column; text-align:center; padding: 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .wa-float { bottom:16px; right:16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WA -->
+<a class="wa-float" href="https://wa.me/819085092179" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Chat on WhatsApp
+</a>
+
+<!-- NAV -->
+<nav class="topbar">
+  <a class="brand" href="#">Jolijou <span>Wholesale</span></a>
+  <div class="nav-cta">
+    <a class="btn btn-outline" href="https://8ythrr-ay.myshopify.com/" target="_blank">View Catalog</a>
+    <a class="btn btn-gold" href="#contact">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" id="top">
+  <div class="hero-left">
+    <div class="tag">B2B Wholesale · Japan</div>
+    <h1>Wholesale<br><em>Luxury</em><br>Handbags</h1>
+    <div class="hero-sub-heading">For Professional Buyers — From Japan</div>
+    <p>Jolijou Wholesale is a Japan-based B2B pre-owned luxury goods supplier. We connect retailers, resellers, and boutique owners worldwide with a constantly refreshed inventory of authenticated pre-owned luxury handbags, wallets, accessories, and more — at competitive wholesale prices with no minimum order.</p>
+    <div class="hero-btns">
+      <a class="btn btn-gold btn-lg" href="#contact">Inquire Now</a>
+      <a class="btn btn-outline btn-lg" href="https://8ythrr-ay.myshopify.com/" target="_blank">Browse Catalog</a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <strong>5,000+</strong>
+        <span>Items in stock</span>
+      </div>
+      <div class="hero-badge">
+        <strong>No MOQ</strong>
+        <span>Start from 1 item</span>
+      </div>
+      <div class="hero-badge">
+        <strong>15+</strong>
+        <span>Countries served</span>
+      </div>
+      <div class="hero-badge">
+        <strong>95%</strong>
+        <span>Repeat buyer rate</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="trust-pill trust-pill-1">Authenticated in Japan</div>
+    <div class="trust-pill trust-pill-2">AACD-Certified Sourcing</div>
+    <div class="hero-img-grid">
+      <div class="img-card">
+        <span>👜</span>
+        <span class="img-card-label">Handbags</span>
+      </div>
+      <div class="img-card">
+        <span>💍</span>
+        <span class="img-card-label">Accessories</span>
+      </div>
+      <div class="img-card">
+        <span>👛</span>
+        <span class="img-card-label">Wallets</span>
+      </div>
+      <div class="img-card">
+        <span>🧣</span>
+        <span class="img-card-label">Scarves</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="ico">🇯🇵</span> <div>Based in <strong>Tokyo & Osaka, Japan</strong></div></div>
+  <div class="trust-item"><span class="ico">🏛️</span> <div>Sourced from <strong>AACD-Certified Auctions</strong></div></div>
+  <div class="trust-item"><span class="ico">🔍</span> <div>Inspected by <strong>In-House Specialists (10+ years)</strong></div></div>
+  <div class="trust-item"><span class="ico">🚚</span> <div><strong>Ships Worldwide</strong> · Same-Day Available</div></div>
+  <div class="trust-item"><span class="ico">💬</span> <div><strong>English Support</strong> via WhatsApp & Email</div></div>
+</div>
+
+<!-- ══════════════════ WHO WE SERVE ══════════════════ -->
+<div class="section">
+  <div class="eyebrow">Who We Work With</div>
+  <h2 class="section-title">Built for <em>Professional Buyers</em></h2>
+  <p class="section-body">We are a dedicated B2B wholesaler. Whether you run a single boutique or a multi-channel resale business, Jolijou is designed to support your growth.</p>
+  <div class="serve-grid">
+    <div class="serve-card">
+      <span class="serve-icon">🏪</span>
+      <div class="serve-title">Retailers</div>
+      <div class="serve-body">Brick-and-mortar luxury boutiques and consignment stores looking for a consistent, reliable source of authenticated pre-owned goods to keep their floors fresh.</div>
+      <div class="serve-tags">
+        <span class="serve-tag">Consistent Supply</span>
+        <span class="serve-tag">Weekly Updates</span>
+        <span class="serve-tag">Quality Graded</span>
+      </div>
+    </div>
+    <div class="serve-card">
+      <span class="serve-icon">📦</span>
+      <div class="serve-title">Resellers</div>
+      <div class="serve-body">Online sellers on marketplaces or personal storefronts who need competitive wholesale pricing, product photos, and authentic goods they can list with confidence.</div>
+      <div class="serve-tags">
+        <span class="serve-tag">Photo Usage Rights</span>
+        <span class="serve-tag">No MOQ</span>
+        <span class="serve-tag">Fast Shipping</span>
+      </div>
+    </div>
+    <div class="serve-card">
+      <span class="serve-icon">✨</span>
+      <div class="serve-title">Boutique Owners</div>
+      <div class="serve-body">Curated boutiques and emerging luxury concepts who want exclusive, hand-picked Japanese pre-owned pieces that set their selection apart from local competition.</div>
+      <div class="serve-tags">
+        <span class="serve-tag">Curated Selection</span>
+        <span class="serve-tag">VIP Program</span>
+        <span class="serve-tag">Concierge Support</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="rule"></div>
+
+<!-- ══════════════════ STATS ══════════════════ -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-block">
+      <div class="stat-num">5,000+</div>
+      <div class="stat-label">Active SKUs<br>in Inventory</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">15K+</div>
+      <div class="stat-label">Units Traded<br>Annually</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Countries<br>Served</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">95%</div>
+      <div class="stat-label">Repeat Buyer<br>Rate</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">2022</div>
+      <div class="stat-label">Founded &<br>Licensed</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ CATEGORIES ══════════════════ -->
+<div class="section">
+  <div class="eyebrow">Product Categories</div>
+  <h2 class="section-title">What We <em>Carry</em></h2>
+  <p class="section-body">Our inventory spans the most sought-after categories in the pre-owned luxury market, sourced from Japan's top AACD-certified auction channels and refreshed weekly.</p>
+  <div class="cat-grid">
+    <div class="cat-card">
+      <span class="cat-icon">👜</span>
+      <div class="cat-name">Handbags</div>
+      <div class="cat-desc">Totes, shoulder bags, clutches & more</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">👛</span>
+      <div class="cat-name">Wallets & Small Leather</div>
+      <div class="cat-desc">Bifolds, cardholders, coin purses</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">💍</span>
+      <div class="cat-name">Jewelry & Accessories</div>
+      <div class="cat-desc">Necklaces, bracelets, earrings, rings</div>
+    </div>
+    <div class="cat-card">
+      <span class="cat-icon">🧣</span>
+      <div class="cat-name">Scarves & Apparel</div>
+      <div class="cat-desc">Silk scarves, wraps, neckties</div>
+    </div>
+  </div>
+  <div style="margin-top:32px; text-align:center;">
+    <a class="btn btn-dark btn-lg" href="https://8ythrr-ay.myshopify.com/collections/all-items" target="_blank">View Full Catalog →</a>
+  </div>
+</div>
+
+<div class="rule"></div>
+
+<!-- ══════════════════ HOW WE SOURCE ══════════════════ -->
+<div class="section">
+  <div class="eyebrow">Authenticity & Sourcing</div>
+  <h2 class="section-title">Japan's <em>Strictest</em> Standard</h2>
+  <div class="source-layout" style="margin-top:48px;">
+    <div class="source-visual">
+      <div class="source-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <strong>AACD-Certified Auction Sourcing</strong>
+          <p>All products are purchased exclusively from auctions certified by AACD — Japan's leading organization dedicated to eliminating counterfeit goods from the secondary market.</p>
+        </div>
+      </div>
+      <div class="source-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <strong>In-House Expert Inspection</strong>
+          <p>Two in-house specialists, each with 10+ years of experience, inspect every item for authenticity and grade it for condition before listing.</p>
+        </div>
+      </div>
+      <div class="source-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong>Optional Third-Party Certificate</strong>
+          <p>For additional assurance, we can arrange an Entrupy-backed Certificate of Authenticity with a 1-year financial guarantee upon request.</p>
+        </div>
+      </div>
+      <div class="source-step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <strong>Government-Licensed Operation</strong>
+          <p>Jolijou Wholesale (TAKUMI Inc.) is fully licensed under Japan's Secondhand Goods Dealers Act. License No. 62123R042823.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="section-body">The pre-owned luxury market runs on trust. Our dual authentication process — combining certified auction sourcing with skilled in-house appraisers — ensures every piece you receive meets the standard your customers expect.</p>
+      <ul class="source-points">
+        <li><span>✦</span> Zero tolerance for items from unverified sources</li>
+        <li><span>✦</span> Strict condition grading — accurate descriptions every time</li>
+        <li><span>✦</span> 7-day return window for undisclosed defects</li>
+        <li><span>✦</span> Transparent, honest communication on all orders</li>
+        <li><span>✦</span> Weekly catalog updates with new authenticated arrivals</li>
+      </ul>
+      <div style="margin-top:28px;">
+        <a class="btn btn-gold" href="https://8ythrr-ay.myshopify.com/pages/authentication" target="_blank">Learn About Our Authentication →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ WHY JOLIJOU ══════════════════ -->
+<div class="why-bg section-full">
+  <div class="section" style="padding-top:0; padding-bottom:0;">
+    <div class="eyebrow">Why Choose Us</div>
+    <h2 class="section-title">7 Reasons Buyers <em>Stay with Jolijou</em></h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <div class="why-title">No Minimum Order Quantity</div>
+        <div class="why-body">Start with a single item — no pressure, no minimum spend. Ideal for boutiques, first-time wholesalers, or testing new product lines.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <div class="why-title">Always-Fresh Inventory</div>
+        <div class="why-body">Our expert buyers source from Japan's auction circuit daily. Catalog is updated every week so you always have something new to offer your customers.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <div class="why-title">Same-Day Shipping Available</div>
+        <div class="why-body">Orders confirmed with payment by noon Japan time ship the same day. Don't miss a sale because your inventory isn't ready.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <div class="why-title">Industry-Leading Wholesale Prices</div>
+        <div class="why-body">We consistently offer among the lowest wholesale prices in the Japan pre-owned market — giving you a strong margin advantage.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <div class="why-title">English-Speaking Support</div>
+        <div class="why-body">Our team communicates fluently in English via WhatsApp, email, and video call. No language barrier, no delays, no confusion.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <div class="why-title">Catalog Photo Usage Rights</div>
+        <div class="why-body">Registered buyers may use our product photography directly on their own sales channels — saving time and reducing your overhead.</div>
+      </div>
+      <div class="why-card" style="grid-column:span 3; display:grid; grid-template-columns:auto 1fr; gap:28px; align-items:center;">
+        <div class="why-num" style="font-size:5rem;margin-bottom:0;">07</div>
+        <div>
+          <div class="why-title" style="font-size:1.05rem;">VIP Program for Volume Buyers</div>
+          <div class="why-body">Buyers exceeding $33,000 USD annually unlock 5% off all regular-price inventory, priority access to new arrivals, and a dedicated concierge account manager.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ COMPANY TRUST ══════════════════ -->
+<div class="section">
+  <div class="eyebrow">Company Information</div>
+  <h2 class="section-title">A <em>Transparent</em> Business You Can Trust</h2>
+  <div class="trust-layout" style="margin-top:12px;">
+    <div>
+      <table class="company-table">
+        <tr><td>Company</td><td>TAKUMI Inc.</td></tr>
+        <tr><td>Brand</td><td>Jolijou Wholesale</td></tr>
+        <tr><td>CEO</td><td>Shohei Okazaki</td></tr>
+        <tr><td>Business Type</td><td>B2B Pre-Owned Luxury Wholesale</td></tr>
+        <tr><td>Head Office</td><td>2-8-8 Higashi-Ueno, Taito-ku,<br>Tokyo, Japan 110-0015</td></tr>
+        <tr><td>Osaka Office</td><td>3-2-7 Utsubo Honmachi, Nishi-ku,<br>Osaka, Japan</td></tr>
+        <tr><td>Phone</td><td>06-6743-4166</td></tr>
+        <tr><td>Email</td><td><a href="mailto:jolijoujp@gmail.com">jolijoujp@gmail.com</a></td></tr>
+        <tr><td>Founded</td><td>July 2022</td></tr>
+        <tr><td>License</td><td>Osaka Prefectural Public Safety Commission<br>No. 62123R042823</td></tr>
+        <tr><td>Payment</td><td>Bank Transfer · Credit Card · PayPal</td></tr>
+      </table>
+    </div>
+    <div class="trust-right">
+      <div class="trust-box">
+        <div class="trust-box-label">Government-Licensed Dealer</div>
+        <div class="trust-box-body">TAKUMI Inc. operates under a valid Japanese Secondhand Goods Dealer license, issued by the Osaka Prefectural Public Safety Commission. All transactions comply fully with Japanese anti-counterfeiting regulation.</div>
+        <span class="license-badge">License No. 62123R042823</span>
+      </div>
+      <div class="trust-box">
+        <div class="trust-box-label">AACD-Certified Sourcing</div>
+        <div class="trust-box-body">The AACD (Association Against Counterfeit Product Distribution) is Japan's leading certification body for eliminating fake goods from the secondary market. Every item we carry originates exclusively from AACD-member auctions.</div>
+      </div>
+      <div class="trust-box">
+        <div class="trust-box-label">Returns & Buyer Protection</div>
+        <div class="trust-box-body">If an item arrives with an undisclosed defect, contact us within 7 days. We arrange return shipping at our cost and process a full refund upon receipt.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ CONTACT / CTA ══════════════════ -->
+<div class="cta-section" id="contact">
+  <div class="cta-inner">
+    <div class="cta-left">
+      <div class="eyebrow" style="color:var(--gold2);">Contact Us</div>
+      <h2 class="section-title">Ready to <em>Start Sourcing?</em></h2>
+      <p class="section-body">Our English-speaking team typically responds within 24 hours. For the fastest reply, reach us via WhatsApp.</p>
+
+      <div class="contact-methods">
+        <a class="contact-method" href="https://wa.me/819085092179" target="_blank" rel="noopener">
+          <span class="cm-icon">💬</span>
+          <div>
+            <div class="cm-label">WhatsApp (Fastest)</div>
+            <div class="cm-val">+81 90-8509-2179</div>
+          </div>
+        </a>
+        <a class="contact-method" href="mailto:jolijoujp@gmail.com">
+          <span class="cm-icon">📧</span>
+          <div>
+            <div class="cm-label">Email</div>
+            <div class="cm-val">jolijoujp@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-method" href="https://8ythrr-ay.myshopify.com/" target="_blank">
+          <span class="cm-icon">🛍️</span>
+          <div>
+            <div class="cm-label">Online Catalog</div>
+            <div class="cm-val">Browse inventory & pricing →</div>
+          </div>
+        </a>
+        <a class="contact-method" href="https://8ythrr-ay.myshopify.com/pages/wholesale-program" target="_blank">
+          <span class="cm-icon">🤝</span>
+          <div>
+            <div class="cm-label">Wholesale Program</div>
+            <div class="cm-val">Learn about partnership terms →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-title">Send an Inquiry</div>
+      <div class="form-sub">Fill in your details and we'll be in touch within 1 business day.</div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input type="text" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label>Last Name *</label>
+          <input type="text" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Company / Business Name *</label>
+        <input type="text" placeholder="Your Store or Business" required>
+      </div>
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" placeholder="you@yourbusiness.com" required>
+      </div>
+      <div class="form-group">
+        <label>WhatsApp / Phone (optional)</label>
+        <input type="tel" placeholder="+1 (555) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>I am a... *</label>
+        <select required>
+          <option value="" disabled selected>Select your business type</option>
+          <option>Retailer / Boutique Owner</option>
+          <option>Online Reseller</option>
+          <option>Consignment Shop</option>
+          <option>Wholesale Distributor</option>
+          <option>First-time Buyer</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message / Categories of Interest</label>
+        <textarea placeholder="e.g. 'I'm looking for pre-owned handbags and wallets for my boutique. Interested in handbags under $300 wholesale...'"></textarea>
+      </div>
+      <button class="form-submit" onclick="handleSubmit(event)">Send Inquiry →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ DISCLAIMER ══════════════════ -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <p><strong>Trademark & Affiliation Disclaimer:</strong> Jolijou Wholesale, operated by TAKUMI Inc., is an independent pre-owned luxury goods wholesaler. We are not affiliated with, endorsed by, sponsored by, or an authorized dealer or reseller of any luxury fashion brand or designer. All trademarks, brand names, logos, and product names referenced on this website or in our catalog belong to their respective trademark owners and are used solely for descriptive identification purposes to indicate that we offer pre-owned goods of those brands in the secondary market. The sale of authentic pre-owned goods is lawful under the first-sale doctrine. Our inventory is sourced exclusively from AACD-certified auction markets in Japan and other reputable licensed secondary markets. Jolijou Wholesale makes no claim of affiliation with or authorization by any brand owner.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Jolijou Wholesale</div>
+  <ul class="footer-links">
+    <li><a href="https://8ythrr-ay.myshopify.com/pages/about-us" target="_blank">About</a></li>
+    <li><a href="https://8ythrr-ay.myshopify.com/pages/authentication" target="_blank">Authentication</a></li>
+    <li><a href="https://8ythrr-ay.myshopify.com/pages/wholesale-program" target="_blank">Wholesale Program</a></li>
+    <li><a href="https://8ythrr-ay.myshopify.com/pages/return-policy" target="_blank">Returns</a></li>
+    <li><a href="https://8ythrr-ay.myshopify.com/policies/privacy-policy" target="_blank">Privacy Policy</a></li>
+    <li><a href="https://8ythrr-ay.myshopify.com/policies/terms-of-service" target="_blank">Terms</a></li>
+  </ul>
+  <div class="footer-copy">© 2026 TAKUMI Inc. · Jolijou Wholesale · All Rights Reserved</div>
+</footer>
+
+<script>
+// FAQ / form handler
+function handleSubmit(e) {
+  e.preventDefault ? e.preventDefault() : null;
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = 'Inquiry Sent ✓  We\'ll be in touch soon!';
+  btn.style.background = '#4a8c62';
+  btn.style.color = '#fff';
+  setTimeout(() => {
+    btn.textContent = 'Send Inquiry →';
+    btn.style.background = '';
+    btn.style.color = '';
+  }, 4000);
+}
+
+// Intersection Observer fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll(
+  '.serve-card,.why-card,.cat-card,.stat-block,.source-step,.trust-box,.contact-method'
+).forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(18px)';
+  el.style.transition = `opacity 0.55s ease ${(i % 4) * 0.08}s, transform 0.55s ease ${(i % 4) * 0.08}s`;
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
