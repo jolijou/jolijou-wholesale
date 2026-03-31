@@ -1260,52 +1260,49 @@ footer {
       </div>
     </div>
 
-    <div class="contact-form">
-      <div class="form-title">Send an Inquiry</div>
-      <div class="form-sub">Fill in your details and we'll be in touch within 1 business day.</div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>First Name *</label>
-          <input type="text" placeholder="Jane" required>
-        </div>
-        <div class="form-group">
-          <label>Last Name *</label>
-          <input type="text" placeholder="Smith" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Company / Business Name *</label>
-        <input type="text" placeholder="Your Store or Business" required>
-      </div>
-      <div class="form-group">
-        <label>Email Address *</label>
-        <input type="email" placeholder="you@yourbusiness.com" required>
-      </div>
-      <div class="form-group">
-        <label>WhatsApp / Phone (optional)</label>
-        <input type="tel" placeholder="+1 (555) 000-0000">
-      </div>
-      <div class="form-group">
-        <label>I am a... *</label>
-        <select required>
-          <option value="" disabled selected>Select your business type</option>
-          <option>Retailer / Boutique Owner</option>
-          <option>Online Reseller</option>
-          <option>Consignment Shop</option>
-          <option>Wholesale Distributor</option>
-          <option>First-time Buyer</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message / Categories of Interest</label>
-        <textarea placeholder="e.g. 'I'm looking for pre-owned handbags and wallets for my boutique. Interested in handbags under $300 wholesale...'"></textarea>
-      </div>
-      <button class="form-submit" onclick="handleSubmit(event)">Send Inquiry →</button>
+    <form class="contact-form" action="https://formspree.io/f/xjgprblp" method="POST">
+  <div class="form-title">Send an Inquiry</div>
+  <div class="form-sub">Fill in your details and we'll be in touch within 1 business day.</div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>First Name *</label>
+      <input type="text" name="first_name" placeholder="Jane" required>
+    </div>
+    <div class="form-group">
+      <label>Last Name *</label>
+      <input type="text" name="last_name" placeholder="Smith" required>
     </div>
   </div>
-</div>
+  <div class="form-group">
+    <label>Company / Business Name *</label>
+    <input type="text" name="company" placeholder="Your Store or Business" required>
+  </div>
+  <div class="form-group">
+    <label>Email Address *</label>
+    <input type="email" name="email" placeholder="you@yourbusiness.com" required>
+  </div>
+  <div class="form-group">
+    <label>WhatsApp / Phone (optional)</label>
+    <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+  </div>
+  <div class="form-group">
+    <label>I am a... *</label>
+    <select name="business_type" required>
+      <option value="" disabled selected>Select your business type</option>
+      <option>Retailer / Boutique Owner</option>
+      <option>Online Reseller</option>
+      <option>Consignment Shop</option>
+      <option>Wholesale Distributor</option>
+      <option>First-time Buyer</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Message / Categories of Interest</label>
+    <textarea name="message" placeholder="e.g. 'I'm looking for pre-owned handbags...'"></textarea>
+  </div>
+  <button type="submit" class="form-submit">Send Inquiry →</button>
+</form>
 
 <!-- ══════════════════ DISCLAIMER ══════════════════ -->
 <div class="disclaimer">
