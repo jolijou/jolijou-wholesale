@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17737266544"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'AW-17737266544');
 </script>
-  <script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17737266544/10NUCOWfnpccEPDq5I1C',
-      'value': 1.0,
-      'currency': 'JPY',
-      'event_callback': callback
-  });
-  return false;
-}
+<!-- Event snippet for WhatsAppボタンをクリック conversion page -->
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll(
+    'a[href*="api.whatsapp.com"], a[href*="whatsapp.com"]'
+  ).forEach(function(element) {
+            element.addEventListener('click', function(){
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17737266544/10NUCOWfnpccEPDq5IlC'
+                });
+            });
+        });
+    });
 </script>
 <title>Jolijou Wholesale — Pre-Owned Luxury Handbags from Japan | B2B Wholesale</title>
 <meta name="description" content="Jolijou Wholesale — Japan's trusted B2B source for pre-owned luxury handbags, wallets & accessories. No minimums. Authenticated. Ships worldwide.">
