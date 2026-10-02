@@ -3,6 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- OpenAI Ads Pixel (ChatGPT広告) -->
+<script>
+  (function (w, d, s, u) {
+    if (w.oaiq) return;
+    var q = function () { q.q.push(arguments); };
+    q.q = [];
+    w.oaiq = q;
+    var js = d.createElement(s);
+    js.async = true;
+    js.src = u;
+    var f = d.getElementsByTagName(s)[0];
+    f.parentNode.insertBefore(js, f);
+  })(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+  oaiq("init", { pixelId: "6fVS8gfJuSjQwEoStYygSB" });
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17737266544"></script>
 <script>
@@ -1382,6 +1398,20 @@ document.querySelectorAll(
   el.style.transition = `opacity 0.55s ease ${(i % 4) * 0.08}s, transform 0.55s ease ${(i % 4) * 0.08}s`;
   observer.observe(el);
 });
+</script>
+<!-- OpenAI Ads: 問い合わせコンバージョン（WhatsAppクリック・フォーム送信） -->
+<script>
+  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      oaiq("measure", "lead_created", { type: "customer_action" });
+    });
+  });
+  var oaiForm = document.querySelector('form.contact-form');
+  if (oaiForm) {
+    oaiForm.addEventListener('submit', function () {
+      oaiq("measure", "lead_created", { type: "customer_action" });
+    });
+  }
 </script>
 </body>
 </html>
