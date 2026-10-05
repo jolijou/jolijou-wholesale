@@ -942,6 +942,35 @@ footer {
   .form-row { grid-template-columns: 1fr; }
   .wa-float { bottom:16px; right:16px; }
 }
+/* Warehouse hero photo */
+.hero-right {
+  display: flex;
+  align-items: center;
+ /* Warehouse hero photo */
+.hero-right {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+  padding: 32px;
+  background: #f4f4f2;
+}
+
+.hero-right::before {
+  display: none;
+}
+
+.warehouse-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  .hero-right {
+    display: block;
+    padding: 0 24px 32px;
+  }
+}
 </style>
 </head>
 <body>
@@ -992,25 +1021,14 @@ footer {
     </div>
   </div>
 
-  <div class="hero-right">
-    <div class="trust-pill trust-pill-1">Authenticated in Japan</div>
-    <div class="trust-pill trust-pill-2">AACD-Certified Sourcing</div>
-    <div class="hero-img-grid">
-    <div class="img-card">
-    <img src="JOLIJOULP受け取り風景.jpg" alt="Pre-owned luxury goods from Japan">
-  </div>
-  <div class="img-card">
-    <img src="JOLIJOULP鑑定風景3.jpg" alt="Authenticated pre-owned accessories">
-  </div>
-  <div class="img-card">
-    <img src="JOLIJOULP鑑定風景.jpg" alt="Japan authentication process">
-  </div>
-  <div class="img-card">
-    <img src="JOLIJOULP鑑定風景2.jpg" alt="Certified luxury sourcing Japan">
-  </div>
+ <div class="hero-right">
+  <img
+    class="warehouse-photo"
+    src="tokyo-warehouse1.jpg"
+    alt="JOLIJOU Tokyo warehouse and pre-owned luxury stock"
+    fetchpriority="high"
+  >
 </div>
-    </div>
-  </div>
 </section>
 
 <!-- TRUST BAR -->
