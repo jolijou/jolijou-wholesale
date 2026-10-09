@@ -1431,7 +1431,14 @@ function handleSubmit(e) {
 <script>
   document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function (a) {
     a.addEventListener('click', function () {
-      oaiq("measure", "lead_created", { type: "customer_action" });
+      if (typeof window.oaiq === "function") {
+        window.oaiq(
+          "measure",
+          "custom",
+          { type: "custom" },
+          { custom_event_name: "whatsapp_click" }
+        );
+      }
     });
   });
   var oaiForm = document.querySelector('form.contact-form');
