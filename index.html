@@ -1430,17 +1430,17 @@ function handleSubmit(e) {
 <!-- OpenAI Ads: 問い合わせコンバージョン（WhatsAppクリック・フォーム送信） -->
 <script>
   document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function (a) {
-  a.addEventListener('click', function () {
-    if (typeof window.oaiq === "function") {
-      window.oaiq(
-        "measure",
-        "custom",
-        { type: "custom" },
-        { custom_event_name: "whatsapp_click" }
-      );
-    }
+    a.addEventListener('click', function () {
+      if (typeof window.oaiq === "function") {
+        window.oaiq(
+          "measure",
+          "custom",
+          { type: "custom" },
+          { custom_event_name: "whatsapp_click" }
+        );
+      }
+    });
   });
-});
   var oaiForm = document.querySelector('form.contact-form');
   if (oaiForm) {
     oaiForm.addEventListener('submit', function () {
