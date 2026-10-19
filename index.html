@@ -1448,5 +1448,21 @@ function handleSubmit(e) {
     });
   }
 </script>
+  <!-- WhatsApp：预填 Landing Page 来源消息 -->
+<script>
+(function () {
+  var message =
+    "Hi, I found Jolijou through your landing page [LP]. " +
+    "I'm interested in your wholesale products.";
+
+  document.querySelectorAll(
+    'a[href*="wa.me/819085092179"]'
+  ).forEach(function (link) {
+    var url = new URL(link.href);
+    url.searchParams.set("text", message);
+    link.href = url.toString();
+  });
+})();
+</script>
 </body>
 </html>
